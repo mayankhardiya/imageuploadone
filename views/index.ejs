@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>This is title</title>
+</head>
+
+<body>
+    <h2>This is fantastic</h2>
+</body>
+<div>
+    <%= typeof msg != 'undefined' ? msg : '' %>
+    <form action="/upload" enctype="multipart/form-data" method="POST">
+        <input name="myImage" type="file">
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+
+    <img src="<%= typeof file != 'undefined' ? file : '' %>" class="responsive-img">
+</div>
+
+</html>
